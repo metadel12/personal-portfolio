@@ -94,7 +94,10 @@
 
 @keyframes verticalPulse {
 
-    0%,
+    0% {
+        opacity: 0.3;
+    }
+
     100% {
         opacity: 0.3;
     }
@@ -106,7 +109,10 @@
 
 @keyframes horizontalPulse {
 
-    0%,
+    0% {
+        opacity: 0.4;
+    }
+
     100% {
         opacity: 0.4;
     }
@@ -467,10 +473,22 @@
 
 @keyframes bounce {
 
-    0%,
-    20%,
-    50%,
-    80%,
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+
     100% {
         transform: translateY(0);
     }
