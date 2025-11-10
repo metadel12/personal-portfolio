@@ -1,0 +1,131 @@
+.theme-toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle {
+    position: relative;
+    /* width: 64px;
+    height: 32px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.theme-toggle-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.theme-toggle-thumb {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 26px;
+    height: 26px;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle.dark .theme-toggle-thumb {
+    transform: translateX(32px);
+    background: #f8fafc;
+}
+
+.sun-icon,
+.moon-icon {
+    position: absolute;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sun-icon {
+    color: #f59e0b;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.moon-icon {
+    color: #cbd5e1;
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.theme-toggle.dark .sun-icon {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.theme-toggle.dark .moon-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.theme-toggle:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+/* Dark mode specific styles */
+.dark-mode .theme-toggle {
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
+.dark-mode .theme-toggle:hover {
+    box-shadow: 0 4px 15px rgba(74, 85, 104, 0.4);
+}
+
+/* Responsive design for theme toggle */
+@media (max-width: 768px) {
+    .theme-toggle {
+        width: 56px;
+        height: 28px;
+    }
+
+    .theme-toggle-thumb {
+        width: 22px;
+        height: 22px;
+        top: 3px;
+        left: 3px;
+    }
+
+    .theme-toggle.dark .theme-toggle-thumb {
+        transform: translateX(28px);
+    }
+
+    .sun-icon,
+    .moon-icon {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-toggle {
+        width: 52px;
+        height: 26px;
+    }
+
+    .theme-toggle-thumb {
+        width: 20px;
+        height: 20px;
+    }
+
+    .theme-toggle.dark .theme-toggle-thumb {
+        transform: translateX(26px);
+    }
+}

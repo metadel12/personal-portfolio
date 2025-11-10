@@ -1,0 +1,20 @@
+/* components/Cursor.css */
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background: #3b82f6;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+}
+
+/* Hide cursor on mobile devices */
+@media (max-width: 768px) {
+    .cursor {
+        display: none;
+    }
+}
