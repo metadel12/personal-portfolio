@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { motion as Motion } from 'framer-motion';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
@@ -209,7 +210,7 @@ const About = ({ darkMode }) => {
             </div>
 
             {/* Animated Background Glow */}
-            <motion.div
+            <Motion.div
                 className="about-glow"
                 animate={{ opacity: [0.2, 0.4, 0.2] }}
                 transition={{
@@ -220,7 +221,7 @@ const About = ({ darkMode }) => {
             />
 
             {/* Main Content */}
-            <motion.div
+            <Motion.div
                 className="about-container"
                 variants={containerVariants}
                 initial="hidden"
@@ -235,15 +236,15 @@ const About = ({ darkMode }) => {
                     {/* Right Column - Content */}
                     <div className="about-text-column">
                         <div className="about-text-content">
-                            <motion.h2
+                            <Motion.h2
                                 ref={titleRef}
                                 className={`about-title ${darkMode ? 'about-title-dark' : 'about-title-light'}`}
                                 variants={itemVariants}
                             >
                                 About <span className={`about-name ${darkMode ? 'about-name-dark' : 'about-name-light'}`}>Me</span>
-                            </motion.h2>
+                            </Motion.h2>
 
-                            <motion.div
+                            <Motion.div
                                 ref={descriptionRef}
                                 className={`about-description ${darkMode ? 'about-description-dark' : 'about-description-light'}`}
                                 variants={itemVariants}
@@ -263,15 +264,15 @@ const About = ({ darkMode }) => {
                                     I specialize in building scalable, user-centric applications that not only look
                                     amazing but also deliver exceptional performance and user experiences.
                                 </p>
-                            </motion.div>
+                            </Motion.div>
 
                             {/* Highlights */}
-                            <motion.div
+                            <Motion.div
                                 ref={highlightsRef}
                                 className="about-highlights"
                                 variants={itemVariants}
                             >
-                                <motion.div
+                                <Motion.div
                                     className={`highlight-item ${darkMode ? 'highlight-item-dark' : 'highlight-item-light'}`}
                                     onMouseEnter={() => setCursorVariant("button")}
                                     onMouseLeave={() => setCursorVariant("default")}
@@ -281,9 +282,9 @@ const About = ({ darkMode }) => {
                                     <div className="highlight-text">
                                         <strong>3+ Years</strong> of professional experience
                                     </div>
-                                </motion.div>
+                                </Motion.div>
 
-                                <motion.div
+                                <Motion.div
                                     className={`highlight-item ${darkMode ? 'highlight-item-dark' : 'highlight-item-light'}`}
                                     onMouseEnter={() => setCursorVariant("button")}
                                     onMouseLeave={() => setCursorVariant("default")}
@@ -293,9 +294,9 @@ const About = ({ darkMode }) => {
                                     <div className="highlight-text">
                                         <strong>5+ Projects</strong> delivered successfully
                                     </div>
-                                </motion.div>
+                                </Motion.div>
 
-                                <motion.div
+                                <Motion.div
                                     className={`highlight-item ${darkMode ? 'highlight-item-dark' : 'highlight-item-light'}`}
                                     onMouseEnter={() => setCursorVariant("button")}
                                     onMouseLeave={() => setCursorVariant("default")}
@@ -305,9 +306,9 @@ const About = ({ darkMode }) => {
                                     <div className="highlight-text">
                                         <strong>Full-Stack</strong> development expertise
                                     </div>
-                                </motion.div>
+                                </Motion.div>
 
-                                <motion.div
+                                <Motion.div
                                     className={`highlight-item ${darkMode ? 'highlight-item-dark' : 'highlight-item-light'}`}
                                     onMouseEnter={() => setCursorVariant("button")}
                                     onMouseLeave={() => setCursorVariant("default")}
@@ -317,12 +318,12 @@ const About = ({ darkMode }) => {
                                     <div className="highlight-text">
                                         <strong>Modern Tech</strong> React, Node.js, Three.js
                                     </div>
-                                </motion.div>
-                            </motion.div>
+                                </Motion.div>
+                            </Motion.div>
                         </div>
                     </div>
                 </div>
-            </motion.div>
+            </Motion.div>
         </section>
     );
 };
