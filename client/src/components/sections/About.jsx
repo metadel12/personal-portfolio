@@ -6,7 +6,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { useCursor } from '../context/CursorContext';
 import './About.css';
-import personasImage from '../../assets/personas.jpg'; 
+
 
 // Register GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
@@ -100,12 +100,12 @@ const AnimatedProfileImage = ({ darkMode }) => {
             <div ref={borderRef} className="profile-image-border">
                 <div className={`profile-image-glow ${darkMode ? 'profile-image-glow-dark' : 'profile-image-glow-light'}`}></div>
             </div>
-          <img
-    ref={imageRef}
-    src={personasImage}  // Use the imported variable
-    alt="Metadel - Full Stack Developer"
-    className="profile-image"
-/>
+   <img
+                ref={imageRef}
+                src="/assets/personas.jpg"  // FIXED: Changed from "persona.jpg" to "personas.jpg"
+                alt="Metadel - Full Stack Developer"
+                className="profile-image"
+            />
 
             <div className="floating-elements">
                 <div className={`floating-element element-1 ${darkMode ? 'floating-element-dark' : 'floating-element-light'}`}></div>
