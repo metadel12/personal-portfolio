@@ -101,7 +101,7 @@ const AnimatedProfileImage = ({ darkMode }) => {
             </div>
             <img
                 ref={imageRef}
-                src="/assets/persona.jpg"  // FIXED: Changed from "persona.jpg" to "personas.jpg"
+                src="/assets/personas.jpg"  // FIXED: Changed from "persona.jpg" to "personas.jpg"
                 alt="Metadel - Full Stack Developer"
                 className="profile-image"
             />
