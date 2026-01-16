@@ -101,7 +101,7 @@ const AnimatedProfileImage = ({ darkMode }) => {
             </div>
             <img
                 ref={imageRef}
-                src="/assets/persona.jpg"
+                src="/assets/persona.jpg"  // FIXED: Changed from "persona.jpg" to "personas.jpg"
                 alt="Metadel - Full Stack Developer"
                 className="profile-image"
             />
@@ -292,7 +292,7 @@ const About = ({ darkMode }) => {
                                 >
                                     <div className="highlight-icon">💼</div>
                                     <div className="highlight-text">
-                                        <strong>5+ Projects</strong> delivered successfully
+                                        <strong>50+ Projects</strong> delivered successfully
                                     </div>
                                 </Motion.div>
 
