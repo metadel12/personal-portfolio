@@ -306,7 +306,7 @@ const Projects = ({ darkMode }) => {
             techStack: ["Node.js", "Express", "MongoDB", "Redis", "Docker"],
             techColors: darkMode ? ["#fbbf24", "#ef4444", "#34d399", "#60a5fa", "#a78bfa"] : ["#f59e0b", "#dc2626", "#10b981", "#3b82f6", "#8b5cf6"],
             liveUrl: "https://api-management-demo.com",
-            githubUrl: "https://github.com/metadel12/taskmangment",
+            githubUrl: "https://github.com/metadel12/Api-mangment",
             category: "Backend",
             featured: false,
             imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
@@ -330,7 +330,7 @@ const Projects = ({ darkMode }) => {
             techStack: ["React", "TypeScript", "Node.js", "MongoDB", "GraphQL"],
             techColors: darkMode ? ["#8b5cf6", "#06b6d4", "#84cc16", "#f97316", "#ec4899"] : ["#7c3aed", "#0891b2", "#65a30d", "#ea580c", "#db2777"],
             liveUrl: "https://task-manager-demo.com",
-            githubUrl: "https://github.com/metadel12/task-manager",
+            githubUrl: "https://github.com/metadel12/taskmangment",
             category: "Full Stack",
             featured: false,
             imageUrl: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
